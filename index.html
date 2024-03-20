@@ -5,121 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./tailwind.config.js">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  
-  </head>
+    <link rel="stylesheet" href="./tailwind.config.js" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+</head>
 
-  <style>
+<style>
     /* Hide by default for small screens */
     .mobile-menu {
-        display: none;
+      display: none;
     }
 
     /* Show for small screens when menu is open */
     .mobile-menu.open {
-        display: block;
+      display: block;
     }
 </style>
-
- 
-  
-  <body class="max-w-7xl mx-auto ">
-    <!-- Navbar Section  -->
-    <section class="flex items-center justify-between mt-5">
-        <a href="" class="underline text-xl">Subscribe</a>
-        <h3 class="text-3xl font-semibold">Large</h3>
-        <div class="flex justify-center items-center gap-2">
-            <span class="material-symbols-outlined hidden md:block ">
-                search
-                </span>
-                <button class="px-2 py-1 border rounded-md hover:bg-slate-500 hover:text-white">Sign Up</button>
-        </div>
+<body class="max-w-7xl mx-auto">
+    
+<section class="flex items-center justify-between mt-5">
+<a href="" class="underline text-xl">Subscribe</a>
+    <h3 class="text-3xl font-semibold">Large</h3>
+    <div class="flex justify-center items-center gap-2">
+        <span class="material-symbols-outlined hidden md:block"> search </span>
+        <button
+        class="px-2 py-1 border rounded-md hover:bg-slate-500 hover:text-white"
+        >
+        Sign Up
+        </button>
+    </div>
     </section>
- <div class="flex  justify-center items-center my-5 block md:hidden">
-    <input class="border py-1" type="text">
-    <span class="material-symbols-outlined  border py-1 ">
-        search
-        </span>
- </div>
-    <nav class="  p-4">
-        <div class="container mx-auto flex justify-center items-center">
-          
-            <div class="hidden md:block">
-                <ul class="flex space-x-4 border-y border-spacing-6  gap-8">
-                    <li><a href="#" class=" text-xl hover:text-black ">World</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">U.S.</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Technology</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Design</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Culture</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Business</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Politics</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Opinion</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Science</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Health</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Style</a></li>
-                    <li><a href="#" class=" text-xl hover:text-black text-slate-500">Travel</a></li>
-                </ul>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-black focus:outline-none">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                    </svg>
-                </button>
-            </div>
+    <div class="flex justify-center items-center my-5">
+      <input class="border py-1 block lg:hidden" type="text" />
+      <span class="material-symbols-outlined lg:hidden block border py-1"> search </span>
+    </div>
+    <nav class="p-4">
+    <div class="container mx-auto flex justify-center items-center">
+        <div class="hidden  lg:block">
+        <ul class="flex space-x-4 border-y  gap-8">
+            <li><a href="#" class="text-xl hover:text-black">World</a></li>
+            <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+                >U.S.</a
+            >
+            </li>
+            <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Technology</a
+            >
+            </li>
+            <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Design</a
+            >
+            </li>
+            <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Culture</a
+            >
+            </li>
+            <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Business</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Politics</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Opinion</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Science</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Health</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-black text-slate-500"
+                >Style</a
+              >
+            </li>
+            <li> <a href="#" class="text-xl hover:text-black text-slate-500">Travel</a >
+            </li>
+          </ul>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu md:hidden">
-            <ul class="flex flex-col items-center mt-4">
-                <li><a href="#" class=" text-xl hover:text-black ">World</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">U.S.</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Technology</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Design</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Culture</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Business</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Politics</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Opinion</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Science</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Health</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Style</a></li>
-                <li><a href="#" class=" text-xl hover:text-black text-slate-500">Travel</a></li>
-            </ul>
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-black focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu lg:hidden">
+        <ul class="flex flex-col items-center mt-4">
+          <li><a href="#" class="text-xl hover:text-black">World</a></li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500">U.S.</a>
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Technology</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Culture</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Business</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Politics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Opinion</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Science</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Health</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Style</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl hover:text-black text-slate-500"
+              >Travel</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<section class="bg-slate-300 h-96 rounded-md">
+<div class="">
+    <h1 class="text-4xl font-semibold pt-20 pl-20">Title of a longer <br> featured blog post</h1>
+<p class="text-xl my-5 pl-20 text-gray-600">Multiple lines of text that form the lede, informing new readers quickly <br> and efficiently about what’s most interesting in this post’s contents.</p>
+<a href="" class="unde[rline pl-20 font-bold">Continue reading...</a>
+</div>
+</section>
 
 
 
 
 
     <script>
-        // JavaScript for toggling the mobile menu
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.getElementById("menu-toggle");
-            const mobileMenu = document.getElementById("mobile-menu");
+      // JavaScript for toggling the mobile menu
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-            menuToggle.addEventListener("click", function() {
-                mobileMenu.classList.toggle("open");
-            });
+        menuToggle.addEventListener("click", function () {
+          mobileMenu.classList.toggle("open");
         });
+      });
     </script>
   </body>
 </html>
